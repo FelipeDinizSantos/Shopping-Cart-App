@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+
 import "./Products.scss";
 import fetchProducts from "../../api/fetchProducts";
-import ProductCard from "../ProductCart";
+import ProductCard from "./ProductCard";
+import { ProductType } from "./types";
 
 const Products = () => {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState<ProductType[]>([]);
 
     useEffect(() => {
         fetchProducts('iphone')
@@ -18,14 +20,12 @@ const Products = () => {
     return (
         <section className="products container">
             {
-                products.map((product) => (
+                products.map(({title, thumbnail, price}:ProductType) => (
                     <ProductCard 
-                        key={product.id}
-                        data={{
-                            title: product.title,
-                            price: product.price,
-                            thumbnail: product.thumbnail,
-                        }}
+                        key={title} 
+                        price={price}
+                        title={title}
+                        thumbnail={thumbnail}
                     />
                 ))
            }

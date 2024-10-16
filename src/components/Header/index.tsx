@@ -1,6 +1,7 @@
 import React from "react";
+
 import "./Header.scss";
-import SearchBar from "../utils/SearchBar";
+import SearchBar from "../SearchBar";
 import CartButton from "../CartButton";
 
 const Header = () => {
@@ -8,7 +9,6 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <SearchBar />
-
                 <CartButton />
             </div>
         </header>
