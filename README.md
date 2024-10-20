@@ -23,4 +23,4 @@ npm run dev
 
 - [ ] Realizar a tipagem faltante dos componentes e funções
 
-### Acesse a documentação da API do Mercado Livre: [API do Mercado Livre](https://developers.mercadolivre.com.br/pt_br/guia-para-produtos)
+### Acesse a documentação da API do Mercado Livre: [docs](https://developers.mercadolivre.com.br/pt_br/guia-para-produtos)
