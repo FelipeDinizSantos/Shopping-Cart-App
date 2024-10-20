@@ -1,14 +1,17 @@
 import React from "react"
 import Header from "./components/Header"
 import Products from "./components/Products"
+import Provider from "./context/Provider";
+import Cart from "./components/Cart";
 
 function App() {
   return (
-    <div>
+    <Provider>
       <Header />
       <Products />
-    </div>
+      <Cart />
+    </Provider>
   )
 }
 
-export default App
+export default App;
