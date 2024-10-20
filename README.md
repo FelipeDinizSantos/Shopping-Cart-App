@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Aplicação de Carrinho de Compras 
+Utiliza REACT para consumir a API do Mercado Livre através de uma interface amigável que permite busca de produtos e gerenciamento de seu carrinho de compras.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Como Rodar o Projeto?
+Clone o repositório: 
+```bash
+git clone https://github.com/FelipeDinizSantos/Shopping-Cart-App.git
+```
+Acesse o diretório do projeto: 
+```bash
+cd Shopping-Cart-App
+```
+Instale as dependências: 
+```bash
+npm i
+```
+Execute o ambiente de desenvolvimento: 
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## TODO
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- [ ] Realizar a tipagem faltante dos componentes e funções
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Acesse a documentação da API do Mercado Livre:
+[API do Mercado Livre](https://developers.mercadolivre.com.br/pt_br/guia-para-produtos)
