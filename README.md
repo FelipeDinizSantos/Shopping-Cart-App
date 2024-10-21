@@ -1,5 +1,5 @@
 # Aplicação de Carrinho de Compras 
-Utiliza REACT para consumir a API do Mercado Livre através de uma interface amigável que permite busca de produtos e gerenciamento de seu carrinho de compras.
+Utiliza REACT para consumir a API do Mercado Livre através de uma interface amigável que permite a busca de produtos e gerenciamento de seu carrinho de compras.
 
 ## Como Rodar o Projeto?
 Clone o repositório 
